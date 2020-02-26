@@ -8,6 +8,11 @@ public class SalaireManager extends SalaireEmploye {
 		super(nom, adresse, annee);
 		this.sousfifre = sousfifre;
 	}
+	
+	public String getAll()
+	{
+		return super.getAll() + sousfifre;
+	}
 
 	@Override
 	public int CalculSalaire() {return super.CalculSalaire() + sousfifre*100;}

@@ -8,6 +8,11 @@ public class SalaireEmploye extends Employe
 		super(nom, adresse);
 		this.annee = annee;
 	}
+	
+	public String getAll()
+	{
+		return super.getAll() + annee + " ";
+	}
 
 	@Override
 	public int CalculSalaire() {return 1500+ 20*annee;}

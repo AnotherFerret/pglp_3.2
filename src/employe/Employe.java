@@ -12,6 +12,11 @@ public class Employe {
 
 	}
 	
+	public String getAll()
+	{
+		return nom + " " + adresse + " ";
+	}
+	
 	public int CalculSalaire()
 	{
 		System.out.println("erreur : tentativer de lancer fonction abstraite");

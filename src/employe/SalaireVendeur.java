@@ -9,6 +9,11 @@ public class SalaireVendeur extends SalaireEmploye
 		this.commission = commission;
 	}
 
+	public String getAll()
+	{
+		return super.getAll() + commission;
+	}
+	
 	@Override
 	public int CalculSalaire() {return super.CalculSalaire() + commission;}
 }

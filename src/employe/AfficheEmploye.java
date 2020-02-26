@@ -2,14 +2,13 @@ package employe;
 
 public class AfficheEmploye {
 
-	Employe e;
-	public AfficheEmploye(Employe e)
+	public AfficheEmploye()
 	{
-		this.e = e;
+		;
 	}
 	
-	public void SortieEmploye()
+	public void SortieEmploye(Employe e)
 	{
-		System.out.println();
+		System.out.println(e.getAll());
 	}
 }
