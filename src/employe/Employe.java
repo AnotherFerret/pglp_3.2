@@ -19,7 +19,7 @@ public class Employe {
 	
 	public int CalculSalaire()
 	{
-		System.out.println("erreur : tentativer de lancer fonction abstraite");
+		System.out.println("erreur : tentativer de lancer fonction pseudo abstraite");
 		return 0;
 	}
 }
