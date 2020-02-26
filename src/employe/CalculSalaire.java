@@ -1,6 +1,6 @@
 package employe;
 
-public class CalculSalaire {
+public abstract class CalculSalaire {
 
-	public int calcul_salaire(Employe e) {return -1;}
+	public abstract int calcul_salaire(Employe e);
 }
