@@ -1,7 +1,14 @@
 package employe;
 
-public class SalaireVendeur extends CalculSalaire
+public class SalaireVendeur extends SalaireEmploye
 {
+	int commission;
+	public SalaireVendeur(String nom, String adresse, int annee, int commission)
+	{
+		super(nom, adresse, annee);
+		this.commission = commission;
+	}
+
 	@Override
-	public int calcul_salaire(Employe e) {return 1500+e.getCommission();}
+	public int CalculSalaire() {return super.CalculSalaire() + commission;}
 }
